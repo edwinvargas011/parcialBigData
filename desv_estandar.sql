@@ -1,0 +1,1 @@
+SELECT *,STDDEV_POP(close) OVER (ORDER BY date ROWS BETWEEN 19 PRECEDING AND CURRENT ROW)AS STD FROM "database_aws_catalog_dollar"."prefixdata"
